@@ -1,1 +1,1 @@
-# product-card
+# Здесь будет вёрстка проекта "Product-card"

@@ -1,9 +1,16 @@
-@import url('./css/reset.css');
-@import url('./css/products-list.css');
-@import url('./css/cards.css');
-@import url('./css/compound.css');
-@import url('./css/products-price.css');
 
+@import url('./css/product-card.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #515076;
+}
 
 .product-catalog__container {
     max-width: 1200px;
@@ -13,12 +20,3 @@
     background-repeat: no-repeat;
 }
 
-.product-catalog__title {
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 78px;
-    text-align: center;
-    color: #515076;
-    padding-top: 220px;
-    padding-bottom: 110px;
-}

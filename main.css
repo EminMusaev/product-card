@@ -1,0 +1,21 @@
+@import url('./css/product-card.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #515076;
+}
+
+.product-catalog__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("img/dandelions.png");
+    background-position-x: 60px;
+    background-repeat: no-repeat;
+}
+

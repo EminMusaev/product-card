@@ -1,0 +1,19 @@
+.compound {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.compound__name {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.compound__list {
+    margin-left: 15px;
+    color: #515076;
+}
+
+.compound__list li {
+    margin-bottom: 3px;
+}

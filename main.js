@@ -29,7 +29,7 @@ function openGoogle() {
     const answer = confirm('Вы действительно хотите открыть Google?');
     
     if (answer === true) {
-        window.open('https://google.com')
+        window.open('https://google.com');
     } else {
         return;
     }
@@ -45,14 +45,14 @@ outputLogButton.addEventListener('click',() => outputConsoleLog('ДЗ №4'))
 function outputConsoleLog(message){
     alert(message)
     console.log(message);
-}
+};
 
 // При наведений на главный заголовок он вызывается в Консоль лог  			
 
 const mainTitle = document.querySelector('#main-title');
 
-mainTitle.addEventListener('mouseenter', () =>{
-    console.log(mainTitle.textContent);
+mainTitle.addEventListener('mouseenter', () => {
+    console.log(mainTitle.textContent); 
 });
 
 

@@ -3,7 +3,7 @@
 const productCards = document.querySelectorAll('.product-card');
 const cardColorAllButton = document.querySelector('#change-all-card');
 const greenColorHash = '#489e9bad';
-const beigeColorHash = '#631f0a2e';
+
 
 cardColorAllButton.addEventListener('click' , () => {
     productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
@@ -13,6 +13,8 @@ cardColorAllButton.addEventListener('click' , () => {
 // Покраска Первой карточки
 const productFirstCard = document.querySelector('.product-card');
 const changeColorFirstCardButton = document.querySelector('#change-color-first-card');
+const beigeColorHash = '#631f0a2e';
+
 
 changeColorFirstCardButton.addEventListener('click', () =>{
     productFirstCard.style.backgroundColor = beigeColorHash;
@@ -40,7 +42,7 @@ function openGoogle() {
 
 const outputLogButton = document.querySelector('#output-console-log');
 
-outputLogButton.addEventListener('click',() => outputConsoleLog('ДЗ №4'))
+outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'))
 
 function outputConsoleLog(message){
     alert(message)
@@ -64,6 +66,6 @@ switchColorButton.addEventListener('click', () => {
     handleButtonColorSwitch();
 });
 
-function handleButtonColorSwitch(){
+function handleButtonColorSwitch() {
     switchColorButton.classList.toggle('bg-orange');
 };

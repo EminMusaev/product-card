@@ -8,52 +8,48 @@ function showTemperature(city,temperature) {
 
 showTemperature(city, temperature);
 
-// Функция выводит в консоль проверку скорости звука
-const SPEED_SOUND = 1235;
+// Сравнивает переданную скорость со скоростью звука
+const SPEED_OF_SOUND = 1235;
 
-function checkSpeedSound(speed) {
-	if (speed > SPEED_SOUND) {
+function compareWithSpeedOfSound(speed) {
+	if (speed > SPEED_OF_SOUND) {
 		console.log('Сверхзвуковая скорость');
-		
-	} else {
+	} else if (speed < SPEED_OF_SOUND) {
 		console.log('Дозвуковая скорость');
-		
+	} else {
+		console.log('Скорость звука');
 	}
 }
 
-checkSpeedSound(1300);
-checkSpeedSound(1000);
+compareWithSpeedOfSound(1300);
+compareWithSpeedOfSound(1000);
+compareWithSpeedOfSound(1235);
 
 
 // // Функция проверяет хватает ли денег на покупку товара и выводит сообщение в консоль.
 const productName = 'Футбольные Бутсы';
 const productPrice = 7000;
 
-function checkBudget(currentBudget) {
+function byuProduct(currentBudget) {
 	if (currentBudget >= productPrice) {
 		console.log(`${productName} приобретены. Спасибо за покупку`);
-		
-		
 	} else {
 		const lack = productPrice - currentBudget
 		console.log(`Вам не хватает ${lack}$, пополните баланс`);
-		
 	}
 }
 
-checkBudget(7000);
-checkBudget(5000);
+byuProduct(7000);
+byuProduct(5000);
 
 // 4
-function calc(number) {
-	console.log(7 * 7);
-	
+function square(num) {
+	console.log(num * num);
 }
 
-calc();
+square(7);
 
 // 5
-
-const myFuture = 'IT';
+const myFutureJob = 'IT';
 let myHobby = 'Football';
 var myCity = 'Saint-Petersburg';

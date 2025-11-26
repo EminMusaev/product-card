@@ -27,13 +27,11 @@ const addCardsUsersRequest = () => {
     if (count >= 1 && count <= 5) {
         const productCardsTemplate = document.getElementById("product-cards-template");
         const containerProductCards = document.getElementById("products-list");
-        const imgPath = "img/";
-        const imgType = ".png";
         
         const diplayProductCards = productCards.slice(0, count);
         diplayProductCards.forEach((card) => {
             const cardClone = productCardsTemplate.content.cloneNode(true);
-            cardClone.querySelector(".product-card__img").src = imgPath + card.imgName + imgType;
+            cardClone.querySelector(".product-card__img").src = `img/${card.imgName}.png`;
             cardClone.querySelector(".product-card__img").alt = card.name;
             cardClone.querySelector(".product-card__skin").textContent = card.skinType;
             cardClone.querySelector(".product-card__name").textContent = card.name;
@@ -53,10 +51,3 @@ const addCardsUsersRequest = () => {
 };
 
 addCardsUsersRequest();
-
-
-
-
-
-
-

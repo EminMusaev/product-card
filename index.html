@@ -16,6 +16,7 @@
             <div class="container product-catalog__container">
                 <h1 class="title product-catalog__title" id="main-title">Выбери свой продукт</h1>
                 <div class="product-cards-btn">
+                    <button class="button__authentication" id="authentication-open-modal-btn">Аутентификация</button>
                     <button class="product-cards-btn-style" id="change-all-card">Сменить цвет всех карточек</button>
                     <button class="product-cards-btn-style" id="change-color-first-card">Сменить цвет первой карточки</button>
                     <button class="product-cards-btn-style" id="open-google">Открыть домашнюю страницу Google.com</button>
@@ -39,14 +40,78 @@
                             </div>
                         </li>
                     </template>
+                    <form id="registration-form">
+                        <label for="name">Имя:</label>
+                        <input id="name" placeholder="Введите имя" type="text" name="userName" required>
+                        <label for="surname">Фамилия:</label>
+                        <input id="surname" placeholder="Введите фамилию" type="text" name="userSurname" required>
+                        <label for="data">Дата рождения:</label>
+                        <input id="data" placeholder="Введите дата рождения" type="date" name="userDate" required>
+                        <label for="login">Логин:</label>
+                        <input id="login" placeholder="Введите логин" type="text" name="userLogin" required>
+                        <label for="user-password">Пароль:</label>
+                        <input id="user-password" placeholder="Введите пароль" type="password" name="userPassword" required>
+                        <label for="user-repeated-password">Подтвердите пароль:</label>
+                        <input id="user-repeated-password" placeholder="Пароль" type="password" name="userRepeatedPassword" required>
+                        <button type="submit" class="registration-btn">Зарегистрироваться</button>
+                    </form>
+                    <div class="modal close-modal">
+                        <div class="modal-showed">
+                            <form id="authorization-form">
+                                <h3 class="authorization-form__title">Авторизация</h3>
+                                <label for="user-login-2">Логин:</label>
+                                <input placeholder="Введите логин" type="text" class="user-login-2" name="user-login-2" required>
+                                <label for="user-password-2">Пароль:</label>
+                                <input placeholder="Введите пароль" type="password" class="user-password-2" name="user-password-2" required>
+                                <button type="submit" class="login-btn" id="login-btn">Войти</button>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </form>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
             </div>
         </section>
     </main>
-    <script type="module" src="product-cards.js"></script>
-    <script type="module" src="homework-8.js"></script>
-    <script type="module" src="homework-7.js"></script>
-    <script src="homework-6.js"></script>
-    <script src="homework-5.js"></script>
-    <script src="main.js"></script>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-left-content">
+                    <h3 class="footer-title">Product Cards</h3>
+                    <p class="left-content-text">У нас самые лучшие продукты для кожи!</p>
+                    <div class="social-icons">
+                        <a href="#!">
+                            <img src="img/telegram-icon.png" alt="Наш Телеграм" class="telegram-icon">
+                        </a>
+                        <a href="#!">
+                            <img src="img/vk-icon.png" alt="Наш ВКонтакте" class="vk-icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-center-content">
+                    <label class="footer-email-form__subscription">Подпишись на наши акции:</label>
+                    <form id="email-form">
+                        <input placeholder="Введи Email..." type="email" name="user-email" required>
+                        <button type="submit" class="footer-email__form-btn">Подписаться</button>
+                    </form>
+                </div>
+                <div class="footer-right-content">
+                    <span class="right-content-text">Быстрые ссылки</span>
+                    <nav class="footer-nav">
+                        <a href="#!" class="footer-nav-links">Главная</a>
+                        <a href="#!" class="footer-nav-links">Магазин</a>
+                        <a href="#!" class="footer-nav-links">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-info__emails">
+                <a class="link" href="#!">www.product-cards.com© all right reserve</a>
+            </div>
+        </footer>
+        <script src="homework-5.js"></script>
+        <script src="homework-6.js"></script>
+        <script type="module" src="product-cards.js"></script>
+        <script type="module" src="homework-7.js"></script>
+        <script type="module" src="homework-8.js"></script>
+        <script src="homework-9.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>

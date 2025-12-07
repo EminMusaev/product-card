@@ -1,5 +1,6 @@
 @import url('./css/product-card.css');
-
+@import url('./css/footer.css');
+@import url('./css/form.css');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +9,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 1.4;
-    color: #515076;
+    text-decoration: none;
 }
 
 .product-catalog__container {

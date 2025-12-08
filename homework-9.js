@@ -37,9 +37,12 @@ const validatePasswords = () => {
         }
     }
 }
-if (password) password.addEventListener('change', validatePasswords);
-if (repeatedPassword) repeatedPassword.addEventListener('change', validatePasswords);
-
+if (password) {
+    password.addEventListener('change', validatePasswords);
+}  
+if (repeatedPassword) {
+    repeatedPassword.addEventListener('change', validatePasswords);
+} 
 if (registrationForm) {
     registrationForm.addEventListener("submit", event => {
         event.preventDefault();

@@ -47,6 +47,21 @@
     cursor: pointer;
 }
 
+.button__authentication {
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #114e5c;
+    color: #ffff;
+    cursor: pointer;
+    border: none;
+}
+
+.button__authentication:hover {
+    background-color: rgb(144, 8, 8);
+    opacity: 1;
+    transition: 1s;
+}
+
 .bg-orange {
     background-color: #ba4c03;
     transition: background-color 0.3s ease;
@@ -112,6 +127,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    color: #515076;
 }
 
 .price__tag {
@@ -120,6 +136,7 @@
     line-height: 24px;
     cursor: pointer;
     transition: color 0.2s ease;
+    color: #515076;
 }
 
 .price__tag:hover {

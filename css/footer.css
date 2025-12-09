@@ -1,0 +1,156 @@
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 28px;
+    background: #3A3A3A;
+    color: #fff;
+}
+
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+
+.footer-title {
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 16px;
+    line-height: 1.54;
+    text-transform: capitalize;
+}
+
+.left-content-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 42px;
+    line-height: 1.54;
+    text-transform: capitalize;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.telegram-icon {
+    width: 21px;
+    height: 18px;
+}
+
+.vk-icon {
+    width: 24px;
+    height: 14px;
+}
+
+
+.footer-email-form__subscription {
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 39px;
+    padding-bottom: 13px;
+}
+
+#email-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    width: 477px;
+    height: 61px;
+    position: relative;
+}
+
+#email-form::before {
+    content: "";
+        position: relative;;
+        left: 317px;
+        height: 18px;
+        border: 1px solid #000000;
+}
+
+#email-form input {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    flex: 1;
+    padding-left: 39px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.footer-email__form-btn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-right: 18px;
+    color: #000;
+}
+
+
+.right-content-text {
+    display: inline-block;
+    margin-bottom: 23px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer-nav-links {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    transition: opacity .2s;
+}
+
+.footer-nav-links:hover {
+    opacity: 0.7;
+}
+
+
+.footer-info__emails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 33px;
+    margin-top: 162px;
+    padding-left: 200px;
+
+}
+
+.footer-info__emails::before {
+    content: "";
+    width: 66px;
+    height: 1px;
+    background: #fff;
+}
+
+.footer-info__emails .link {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+}

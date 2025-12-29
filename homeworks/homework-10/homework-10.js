@@ -1,59 +1,26 @@
-import { Modal } from './modal.js';
-import { Form } from './form.js';
+import { Modal } from './Modal.js';
+import { Form } from './Form.js';
+import { ForwardPlayer } from './ForwardPlayer.js';
+import { Midfielder } from './Midfielder.js';
+import { Goalkeeper } from './Goalkeeper.js';
+import { Defender } from './Defender.js';
 
-// №03 Структура классов с наследованием
-class FootballPlayer {
-    constructor(name, age, club, position) {
-        this.name = name;
-        this.age = age;
-        this.club = club;
-        this.position = position;
-    }
-
-    showInfo() {
-        console.log(`${this.name}, ${this.age}, ${this.club}, ${this.position}`);
-    }
-
-    setClub(newClub) {
-        this.club = newClub;
-    }
-
-    getPosition() {
-        return this.position;
-    }
-}
-class FootballPlayerGoals extends FootballPlayer {
-    constructor(name, age, club, position, goals) {
-        super(name, age, club, position);
-        this.goals = goals;
-    }
-
-    showGoals() {
-        console.log(`${this.name} has scored ${this.goals} goals in his career`);
-    }
-
-    setGoals(value) {
-        this.goals = value;
-    }
-
-    getGoals() {
-        return this.goals;
-    }
-}
-const ronaldo = new FootballPlayerGoals("Cristiano Ronaldo", 40, "Al-Nassr", "Forward", 950);
-
+// №3
+const ronaldo = new ForwardPlayer("Криштиану Роналду", 40, "Аль-Наср", '956+');
 ronaldo.showInfo();
 ronaldo.showGoals();
 
-const messi = new FootballPlayerGoals("Lionel Messi", 35, "Inter Miami", "Forward", 900);
+const neuer = new Goalkeeper("Мануэль Нойер", 39, "Бавария Мюнхен", '300+');
+neuer.showInfo();
+neuer.showDryMatches();
 
-messi.showInfo();
-messi.showGoals();
+const ramos = new Defender("Серхио Рамос", 39, "Монтеррей", '1200+');
+ramos.showInfo();
+ramos.showTackles();
 
-const mbappe = new FootballPlayerGoals("Kylian Mbappé", 24, "Real Madrid", "Forward", 400);
-
-mbappe.showInfo();
-mbappe.showGoals();
+const modric = new Midfielder("Лука Модрич", 40, "Милан", '180+');
+modric.showInfo();
+modric.showAssists();
 
 // №04 Переписать Модальное окно
 const modal = new Modal('modal');

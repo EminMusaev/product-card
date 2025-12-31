@@ -5,6 +5,8 @@ const greenColorHash = '#489e9bad';
 
 
 cardColorAllButton.addEventListener('click' , () => {
+    const allProductsCards = document.querySelector('#products-list')
+    const productCards = allProductsCards?.querySelectorAll('.product-card')
     productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
 });
 
@@ -15,7 +17,11 @@ const beigeColorHash = '#631f0a2e';
 
 
 changeColorFirstCardButton.addEventListener('click', () =>{
-    productFirstCard.style.backgroundColor = beigeColorHash;
+    const productsList = document.querySelector('#products-list');
+    const firstCard = productsList?.querySelector('.product-card');
+    if(!firstCard) 
+    return
+    firstCard.style.backgroundColor = beigeColorHash;
 });
 
 // Открыть Google

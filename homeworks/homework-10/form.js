@@ -1,8 +1,9 @@
 // 5. Создать файл Form.js и реализовать класс для формы под названием Form.
 
 export class Form {
-    constructor(form) {
-        this.form = document.getElementById(form);
+    constructor(formId) {
+        this.form = document.getElementById(formId);
+
         if (!this.form) return;
     }
 
@@ -17,4 +18,4 @@ export class Form {
     resetForm() {
         this.form.reset();
     }
-};
+}

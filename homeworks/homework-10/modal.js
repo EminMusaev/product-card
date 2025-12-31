@@ -7,20 +7,18 @@ export class Modal {
 
     this.closeBtn = this.modal.querySelector('#close-btn');
     this.initCloseButton();
-}
+    }
 
     openModal() {
-        this.modal.classList.remove('close-modal');
-        this.modal.classList.add('open-modal');
+    this.modal.classList.add('modal-showed');
     }
 
     closeModal() {
-        this.modal.classList.remove('open-modal');
-        this.modal.classList.add('close-modal');
+    this.modal.classList.remove('modal-showed');
     }
 
     isOpenModal() {
-        return this.modal.classList.contains('open-modal');
+        return this.modal.classList.contains('modal-showed');
     }
 
     initCloseButton() {
@@ -31,4 +29,4 @@ export class Modal {
             });
         }
     }
-};
+}

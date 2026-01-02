@@ -51,7 +51,6 @@
     display: flex;
 }
 
-
 .close-modal {
     display: none;
 }
@@ -64,8 +63,7 @@
     z-index: 1;
 }
 
-
-.modal-showed {
+.modal-window {
     position: relative;
     width: 450px;
     padding: 35px;
@@ -76,6 +74,10 @@
     transform: scale(0.8);
     opacity: 0;
     animation: fadeInModal 0.3s ease forwards;
+}
+
+.modal.modal-showed {
+    display: flex;
 }
 
 @keyframes fadeInModal {

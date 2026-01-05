@@ -1,33 +1,34 @@
 export class Drink {
-  #temp;
+  
+  #temperature;
 
   constructor(title, volume, price) {
     this.title = title;
     this.volume = volume;
     this.price = price;
-    this.#temp = null;
+    this.#temperature = null;
   }
 
   getDescription() {
-    return `Напиток: ${this.title}, объем: ${this.volume}, цена: ${this.price}, ${this.getTemp()}`;
+    return `Напиток: ${ this.title }, объем: ${ this.volume }, цена: ${ this.price }, ${ this.getTemperature() }`;
   }
 
-  getTemp() {
-    return this.#temp;
+  getTemperature() {
+    return this.#temperature;
   }
 
-  setTemp(value) {
-    this.#temp = `Температура: ${value}`;
+  setTemperature(value) {
+    this.#temperature = `Температура: ${ value }`;
   }
 
   #makeDrink(note) {
     console.log('Начинается приготовление напитка...');
     console.log(note);
-    this.setTemp(65);
+    this.setTemperature(65);
   }
 
   serve(note) {
     this.#makeDrink(note);
-    console.log(`Напиток "${this.title}" подан`);
+    console.log(`Напиток "${ this.title }" подан`);
   }
 }

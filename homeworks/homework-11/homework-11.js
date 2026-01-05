@@ -40,5 +40,5 @@ cafe.showCafeDetails();
 cafe.orderDrink(cocaCola);
 cafe.orderDrink(greenTea);
 cafe.orderDrink(coffee);
-console.log(greenTea.getTemp());
+console.log(greenTea.getTemperature());
 

@@ -1,4 +1,4 @@
-import { Modal } from './Modal.js';
+import { Modal } from '../homework-12/Modal.js';
 import { Form } from './Form.js';
 import { ForwardPlayer } from './ForwardPlayer.js';
 import { Midfielder } from './Midfielder.js';
@@ -23,9 +23,9 @@ modric.showInfo();
 modric.showAssists();
 
 // №04 Переписать Модальное окно
-const modal = new Modal('modal');
+const modal = new Modal('modal', 'authentication-open-modal-btn', true);
 const loginBtn = document.getElementById("login-btn");
-const authenticationOpenModalBtn = document.getElementById("authentication-open-modal-btn");
+const authenticationOpenModalBtn = document.getElementById("authentication-open-modal-btn", false);
 
 authenticationOpenModalBtn.addEventListener("click", () =>{
     modal.openModal();

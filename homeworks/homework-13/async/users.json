@@ -1,0 +1,52 @@
+[  
+    {
+        "id": 1,
+        "name": "Emin",
+        "surname": "Musaev",
+        "age": 23,
+        "city": "Saint-Petersburg",
+        "email": "emin_musaev_98@mail.ru",
+        "job": "Angular frontend developer"
+    
+    },
+    
+    {
+        "id": 2,
+        "name": "Nikita",
+        "surname": "Stabrov",
+        "age": 29,
+        "city": "Saratov",
+        "email": "nikita_228@gmail.com",
+        "job": "Backend developer"
+    },
+    
+    {
+        "id": 3,
+        "name": "Rayan",
+        "surname": "Cherki",
+        "age": 23,
+        "city": "Mancester",
+        "email": "rayan_9@mail.ru",
+        "job": "magic"
+    },
+    
+    {
+        "id": 4,
+        "name": "Konul",
+        "surname": "Mamedova",
+        "age": 49,
+        "city": "Saint-Petersburg",
+        "email": "mamedova_1905@mail.ru",
+        "job": "dental hygienist"
+    },
+    
+    {
+        "id": 5,
+        "name": "Cristiano",
+        "surname": "Ronaldo",
+        "age": 40,
+        "city": "Madrid",
+        "email": "Suuii_777@mail.ru",
+        "job": "GOAT"
+    }
+]

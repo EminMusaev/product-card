@@ -34,13 +34,13 @@ function renderCardsUsers(users) {
         const li = template.querySelector('.user-card-item');
         li.dataset.id = user.id;
 
-        template.querySelector('.user-id').textContent = `ID: ${user.id}`;
-        template.querySelector('.user-firstname').textContent = `Имя: ${user.name}`;
-        template.querySelector('.user-lastname').textContent = `Фамилия: ${user.surname}`;
-        template.querySelector('.user-email').textContent = `Email: ${user.email}`;
-        template.querySelector('.user-age').textContent = `Возраст: ${user.age}`;
-        template.querySelector('.user-city').textContent = `Город: ${user.city}`;
-        template.querySelector('.user-job').textContent = `Должность: ${user.job}`;
+        template.querySelector('.user-id').textContent = `ID: ${ user.id }`;
+        template.querySelector('.user-firstname').textContent = `Имя: ${ user.name }`;
+        template.querySelector('.user-lastname').textContent = `Фамилия: ${ user.surname }`;
+        template.querySelector('.user-email').textContent = `Email: ${ user.email }`;
+        template.querySelector('.user-age').textContent = `Возраст: ${ user.age }`;
+        template.querySelector('.user-city').textContent = `Город: ${ user.city }`;
+        template.querySelector('.user-job').textContent = `Должность: ${ user.job }`;
 
         usersList.appendChild(template);
     });
@@ -61,6 +61,7 @@ async function initUsers() {
         }, 1000);
     }
 }
+
 initUsers();
 
 deleteAllCardsButton.addEventListener('click', () => {
@@ -76,15 +77,18 @@ addAllCardsButton.addEventListener('click', async () => {
     renderCardsUsers(users);
 });
 
+function deleteUser(id) {
+    const cardElement = document.querySelector(`.user-card-item[data-id="${ id }"]`);
+    if (cardElement) cardElement.remove();
+
+    let users = getUsersFromStorage();
+    users = users.filter(user => user.id != Number(id));
+    saveUsersToStorage(users);
+}
+
 usersList.addEventListener('click', event => {
     if (event.target.classList.contains('btn-delete-card')) {
-        const cardElement = event.target.closest('.user-card-item');
-        const id = cardElement.dataset.id;
-
-        cardElement.remove();
-
-        let users = getUsersFromStorage();
-        users = users.filter(user => user.id != id);
-        saveUsersToStorage(users);
+        const id = event.target.closest('.user-card-item').dataset.id;
+        deleteUser(id);
     }
 });

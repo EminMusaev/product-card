@@ -1,4 +1,4 @@
-[  
+[
     {
         "id": 1,
         "name": "Emin",
@@ -25,7 +25,7 @@
         "name": "Rayan",
         "surname": "Cherki",
         "age": 23,
-        "city": "Mancester",
+        "city": "Manchester",
         "email": "rayan_9@mail.ru",
         "job": "magic"
     },
@@ -46,7 +46,7 @@
         "surname": "Ronaldo",
         "age": 40,
         "city": "Madrid",
-        "email": "Suuii_777@mail.ru",
+        "email": "suuii_777@mail.ru",
         "job": "GOAT"
     }
 ]

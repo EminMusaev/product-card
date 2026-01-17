@@ -33,6 +33,10 @@ function renderCardsUsers(users) {
 
         const li = template.querySelector('.user-card-item');
         li.dataset.id = user.id;
+        const deleteButton = template.querySelector('.btn-delete-card');
+    deleteButton.addEventListener('click', () => {
+    deleteUser(user.id);
+});
 
         template.querySelector('.user-id').textContent = `ID: ${ user.id }`;
         template.querySelector('.user-firstname').textContent = `Имя: ${ user.name }`;
@@ -86,9 +90,3 @@ function deleteUser(id) {
     saveUsersToStorage(users);
 }
 
-usersList.addEventListener('click', event => {
-    if (event.target.classList.contains('btn-delete-card')) {
-        const id = event.target.closest('.user-card-item').dataset.id;
-        deleteUser(id);
-    }
-});
